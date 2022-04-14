@@ -31,6 +31,23 @@
             "Equation": "((x^2)-5)/4"
           }
         ]
+      },
+      {
+        "NewtonRaphson": [
+          {
+            "X": 2,
+            "Equation": "7-(x^2)"
+          }
+        ]
+      },
+      {
+        "Secant": [
+          {
+            "X": 2,
+            "Xi": 2.75,
+            "Equation": "(x^2)-7"
+          }
+        ]
       }
     ]
   }
