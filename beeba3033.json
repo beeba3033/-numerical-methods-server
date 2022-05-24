@@ -1,0 +1,124 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "defaultTitle",
+    "description": "defaultDescription",
+    "version": "0.1"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:7800"
+    }
+  ],
+  "paths": {
+    "/login": {
+      "post": {
+        "description": "Auto generated Token",
+        "responses": {
+          "200": {
+            "description": "Example generated Token",
+            "content": {
+              "application/json; charset=utf-8": {
+                "examples": {
+                  "0": {
+                    "value": "{\"email\": \"afterlevisp@hotmail.com\",\"password\": \"3033\"}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:7800"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:7800"
+        }
+      ]
+    },
+    "/register": {
+      "post": {
+        "description": "Auto generated Token",
+        "responses": {
+          "200": {
+            "description": "Example generated Token",
+            "content": {
+              "application/json; charset=utf-8": {
+                "examples": {
+                  "0": {
+                    "value": "{\"email\": \"afterlevisp@hotmail.com\",\"password\": \"3033\"}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:7800"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:7800"
+        }
+      ]
+    },
+    "/NumericalMethod": {
+      "get": {
+        "description": "select chapter and problems to using",
+        "responses": {
+          "200": {
+            "description": "Example for get problems form Bisection Method",
+            "content": {
+              "application/json; charset=utf-8": {
+                "examples": {
+                  "0": {
+                    "value": "{\"NumericalMethod\":{\"Chapter\":[{\"Bisection\":[{\"Xl\":1.75,\"Xr\":2,\"Equation\":\"(x^4)-13\"},{\"Xl\":1.75,\"Xr\":2,\"Equation\":\"43x-1\"}]}]}}"
+                  },
+                  "1": {
+                    "value": "{\"NumericalMethod\":{\"Chapter\":[{\"FalsePosition\":[{\"Xl\":0.02,\"Xr\":0.03,\"Equation\":\"43x-1\"}]}]}}"
+                  },
+                  "2": {
+                    "value": "{\"NumericalMethod\":{\"Chapter\":[{\"CramerRule\":[{\"MatrixA\":\"[[1,2],[3,4]]\",\"MatrixB\":\"[[5,6],[7,8]]\"},{\"MatrixA\":\"[[5,2,0,0],[2,5,2,0],[0,2,5,2],[0,0,2,5]]\",\"MatrixB\":\"[[12],[17],[14],[7]]\"},{\"MatrixA\":\"[[3,2,1],[4,-1,2],[2,3,4]]\",\"MatrixB\":\"[[10],[5],[8]]\"}]}]}}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:7800"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:7800"
+        }
+      ]
+    }
+  },
+  "components": {
+    "schemas": {},
+    "securitySchemes": {
+      "oauth2": {
+        "type": "oauth2",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "http://yourauthurl.com",
+            "scopes": {
+              "scope_name": "Enter your scopes here"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,6 +4,11 @@
       "email": "afterlevisp@hotmail.com",
       "password": "$2a$10$Ng7LYb7O4ymAT6X/WI1fAehg1ZUWZbiLY3lWrCeSfTb0HfDW.MF7q",
       "id": 1
+    },
+    {
+      "email": "tester@hotmail.com",
+      "password": "$2a$10$LwFfasQbX4nCtw4ySVdnFOYbdUdhUNh1ND3d2jy27kxF6xLAFtyde",
+      "id": 2
     }
   ],
   "NumericalMethod": {
