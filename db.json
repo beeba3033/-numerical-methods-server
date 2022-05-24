@@ -78,7 +78,7 @@
         ]
       },
       {
-        "GaussElimination": [
+        "Gauss": [
           {
             "MatrixA":"[[3,2,1],[4,1,2],[2,3,4]]",
             "MatrixB":"[[10],[5],[8]]"
