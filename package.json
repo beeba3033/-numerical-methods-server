@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "json-server --watch ./db.json",
+    "start-auth": "node server.js"
+  },
+  "dependencies": {
+    "json-server-auth": "^2.1.0",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  }
+}
