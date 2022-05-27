@@ -9,6 +9,21 @@
       "email": "tester@hotmail.com",
       "password": "$2a$10$LwFfasQbX4nCtw4ySVdnFOYbdUdhUNh1ND3d2jy27kxF6xLAFtyde",
       "id": 2
+    },
+    {
+      "email": "beeba@hotmail.com",
+      "password": "$2a$10$/64i.E5Xl0zU7OTzhpZCRuxcVmj9ZcVZcCequLtrExWBc5zoN5OTG",
+      "id": 3
+    },
+    {
+      "email": "beeba@gmail.com",
+      "password": "$2a$10$FZdXEnHJ.y1H25ErzCs9Y.XGhwn/BrQu19aWhJLAt5jANFUrRNwIG",
+      "id": 4
+    },
+    {
+      "email": "est@gmail.com",
+      "password": "$2a$10$dTB8wRYdzwS7U5nQAKOlJOmii4yz0jyIJcypNkpHXYOIBGGH42cwa",
+      "id": 5
     }
   ],
   "NumericalMethod": {

@@ -14,14 +14,28 @@
     "/login": {
       "post": {
         "description": "Auto generated Token",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/login_body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\"email\": \"afterlevisp@hotmail.com\",\"password\": \"3033\"}"
+                }
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
-            "description": "Example generated Token",
+            "description": "All Header data",
             "content": {
               "application/json; charset=utf-8": {
                 "examples": {
                   "0": {
-                    "value": "{\"email\": \"afterlevisp@hotmail.com\",\"password\": \"3033\"}"
+                    "value": "{\"Token\":\"Example TOKEN\"}"
                   }
                 }
               }
@@ -43,14 +57,28 @@
     "/register": {
       "post": {
         "description": "Auto generated Token",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/register_body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\"email\": \"afterlevisp@hotmail.com\",\"password\": \"3033\"}"
+                }
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
-            "description": "Example generated Token",
+            "description": "All Header data",
             "content": {
               "application/json; charset=utf-8": {
                 "examples": {
                   "0": {
-                    "value": "{\"email\": \"afterlevisp@hotmail.com\",\"password\": \"3033\"}"
+                    "value": "{\"Token\":\"Example TOKEN\"}"
                   }
                 }
               }
@@ -92,6 +120,11 @@
             }
           }
         },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
         "servers": [
           {
             "url": "http://localhost:7800"
@@ -106,18 +139,35 @@
     }
   },
   "components": {
-    "schemas": {},
-    "securitySchemes": {
-      "oauth2": {
-        "type": "oauth2",
-        "flows": {
-          "implicit": {
-            "authorizationUrl": "http://yourauthurl.com",
-            "scopes": {
-              "scope_name": "Enter your scopes here"
-            }
+    "schemas": {
+      "register_body": {
+        "type": "object",
+        "properties": {
+          "password": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
           }
         }
+      },
+      "login_body": {
+        "type": "object",
+        "properties": {
+          "password": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
       }
     }
   }
